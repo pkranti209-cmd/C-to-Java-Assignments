@@ -1,21 +1,21 @@
-//2. Write a program to check given 3 digit number is pallindrome or //not.
+//9 Check the given number is Palindrome number or not.
+//Input: n = 121
+//Output: Palindrome
 
 public class Palindrome {
     public static void main(String[] args) {
-        int num = 121;
-        int temp = num;
-        int rev = 0;
+        int n = 121, temp = n, rev = 0;
 
-        while (temp != 0) {
+        while(temp != 0) {
             int rem = temp % 10;
             rev = rev * 10 + rem;
             temp = temp / 10;
         }
 
-        if (num == rev)
-            System.out.println("Palindrome Number");
+        if(rev == n)
+            System.out.println("Palindrome");
         else
-            System.out.println("Not Palindrome Number");
+            System.out.println("Not Palindrome");
     }
 }
 
